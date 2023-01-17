@@ -35,23 +35,20 @@ const Destination = () => {
                 <button
                   key={destination.name}
                   onClick={() => handleClick(destination.name)}
-                  className='tracking-widest h-[35px] focus:border-b-[3px] text-[16px] text-lightBlueGray'>{destination.name}</button>
+                  className='tracking-widest h-[35px] focus:border-b-[3px] text-[16px] focus:text-white text-lightBlueGray'>{destination.name}</button>
 
               )
             })}
           </div>
           {console.log("clicked", selectedDestination)}
-          <h1 className='font-bellefair text-[58px] mt-2'>{planetData.name}</h1>
-          <p className='text-center px-6 text-[16px] text-lightBlueGray mb-6'>{planetData.description}
+          <h1 className='font-bellefair text-[58px] mt-4'>{planetData.name}</h1>
+          <p className='text-center border-b-[1px] border-gray-600 px-6 text-[16px] text-lightBlueGray mb-6 pb-10'>{planetData.description}
           </p>
-          {/* deviding line here */}
-          
-          {/* planet data */}
-          <p>AVG. DISTANCE</p>
-          <h1>{planetData.distance}</h1>
+          <p className='font-barlowCondensed tracking-widest text-lightBlueGray mb-2'>AVG. DISTANCE</p>
+          <h1 className='font-bellefair text-2xl tracking-wider'>{planetData.distance}</h1>
 
-          <p>EST. TRAVEL TIME</p>
-          <h1>{planetData.travel}</h1>
+          <p className='font-barlowCondensed text-lightBlueGray mt-8 tracking-widest'>EST. TRAVEL TIME</p>
+          <h1 className='font-bellefair text-2xl tracking-wider mt-2'>{planetData.travel}</h1>
         </div>
       
       </div>
