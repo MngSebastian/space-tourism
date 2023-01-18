@@ -25,9 +25,7 @@ const Destination = () => {
           <h1 className='font-barlowCondensed tracking-wider text-lg'><span className='text-blue-200'>01</span> PICK YOUR DESTINATION</h1>
           <img 
             className='w-[180px] h-[180px] mt-8'
-            src="./assets/destination/image-moon.png" alt="destination"/>
-          {/* Moons */}
-          {/* {console.log("here data", data.destinations.name.MOON)} */}
+            src={planetData.images.png} alt="destination"/>
           <div className='flex font-barlowCondensed gap-8 mt-6'>
             {/* map over destinations and display each as button */}
             {data.destinations.map( destination =>{
@@ -42,7 +40,8 @@ const Destination = () => {
           </div>
           {console.log("clicked", selectedDestination)}
           <h1 className='font-bellefair text-[58px] mt-4'>{planetData.name}</h1>
-          <p className='text-center border-b-[1px] border-gray-600 px-6 text-[16px] text-lightBlueGray mb-6 pb-10'>{planetData.description}
+          <p className='text-center border-b-[1px] border-gray-600 px-6 text-[16px] text-lightBlueGray mb-6 pb-10'>
+            {planetData.description}
           </p>
           <p className='font-barlowCondensed tracking-widest text-lightBlueGray mb-2'>AVG. DISTANCE</p>
           <h1 className='font-bellefair text-2xl tracking-wider'>{planetData.distance}</h1>
