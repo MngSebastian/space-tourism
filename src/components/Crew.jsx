@@ -22,12 +22,10 @@ const Crew = () => {
       <div className="flex bg-[url('./assets/crew/background-crew-mobile.jpg')] bg-no-repeat bg-cover bg-center
         bg-fixed  h-full w-full text-white pt-20">
         <div className='flex flex-col items-center w-full'>
-          <h1 className='font-barlowCondensed tracking-wider text-lg'><span className='text-blue-200'>01</span> MEET YOUR CREW</h1>
+          <h1 className='font-barlowCondensed tracking-wider text-lg'><span className='text-blue-200'>02</span> MEET YOUR CREW</h1>
           <img 
             className='w-[230px] h-[280px] border-b-[1px] border-gray-600 mt-8'
             src={crewData.images.png} alt="destination"/>
-            {/* dots */}
-            {console.log(data.crew)}
             <div className='flex w-full gap-6 justify-center'>
               {data.crew.map( crew => {
                 return <button
