@@ -27,16 +27,24 @@ const Navbar = () => {
             <div className='flex  flex-col items-start  gap-8 font-barlowCondensed text-[22px] tracking-widest
                text-white pt-20 pl-8'>
                 <Link to="/">
-                  <button className='w-full text-start'><span className='tracking-widest pr-2'>00</span> HOME</button>
+                  <button 
+                  onClick={() => handleClick(setIsMenuToggled(!isMenuToggled))}
+                  className='w-full text-start'><span className='tracking-widest pr-2'>00</span> HOME</button>
                 </Link>
                 <Link to="/destination">
-                  <button className='w-full text-start'><span className='tracking-widest pr-2'>01</span> DESTINATION</button>
+                  <button 
+                  onClick={() => handleClick(setIsMenuToggled(!isMenuToggled))}
+                  className='w-full text-start'><span className='tracking-widest pr-2'>01</span> DESTINATION</button>
                 </Link>
                 <Link to="/crew">
-                  <button className='w-full text-start'><span className='tracking-widest pr-2'>02</span> CREW</button>
+                  <button 
+                  onClick={() => handleClick(setIsMenuToggled(!isMenuToggled))}
+                  className='w-full text-start'><span className='tracking-widest pr-2'>02</span> CREW</button>
                 </Link>
                 <Link to="/technology">
-                  <button className='w-full text-start'><span className='tracking-widest pr-2'>03</span> TECHNOLOGY</button>
+                  <button 
+                  onClick={() => handleClick(setIsMenuToggled(!isMenuToggled))}
+                  className='w-full text-start'><span className='tracking-widest pr-2'>03</span> TECHNOLOGY</button>
                 </Link>
             </div>
           </div> 

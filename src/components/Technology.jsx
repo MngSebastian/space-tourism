@@ -29,7 +29,7 @@ const Technology = () => {
           </h1>
           <img 
             className='w-full h-[210px] border-b-[1px] border-gray-600 mt-10'
-            src="./assets/technology/image-launch-vehicle-landscape.jpg" alt="destination"/>
+            src={technologyData.images.landscape} alt="destination"/>
           <div className='flex gap-4 mt-10'>
             {data.technology.map( (item, index ) => {
               return <button
