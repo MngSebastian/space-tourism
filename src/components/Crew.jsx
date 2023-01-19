@@ -24,21 +24,21 @@ const Crew = () => {
         <div className='flex flex-col items-center w-full'>
           <h1 className='font-barlowCondensed tracking-wider text-lg'><span className='text-blue-200'>02</span> MEET YOUR CREW</h1>
           <img 
-            className='w-[230px] h-[280px] border-b-[1px] border-gray-600 mt-8'
+            className='w-[200px] h-[250px] border-b-[1px] border-gray-600 mt-6'
             src={crewData.images.png} alt="destination"/>
             <div className='flex w-full gap-6 justify-center'>
-              {data.crew.map( crew => {
+              {data.crew.map( (crew, index) => {
                 return <button
                 key={crew.name}
                 onClick={() => handleClick(crew.name)}  
                 className='bg-gray-600 focus:bg-white w-[15px] h-[15px] 
-                  rounded-full mt-10 mb-10'></button>
+                  rounded-full mt-6 mb-6'></button>
               })}
 
             </div>
             <h3 className=' font-bellefair text-[20px] tracking-wide text-lightBlueGray'>{crewData.role}</h3>
             <h1 className=' text-[30px] tracking-wide font-bellefair'>{crewData.name}</h1>
-            <p className='px-6 text-center  leading-8 mt-6 text-lightBlueGray tracking-wide'>{crewData.bio}</p>
+            <p className='px-6 text-center  leading-8 mt-4 text-lightBlueGray tracking-wide'>{crewData.bio}</p>
         </div>
           
 

@@ -1,11 +1,12 @@
 import React from 'react'
-
+import { Link } from "react-router-dom"
 
 
 const Landing = () => {
   return (
     <div className='h-full w-full '>
-      <div className="flex flex-col items-center bg-[url('./assets/home/background-home-mobile.jpg')] bg-no-repeat bg-cover bg-center
+      <div className="flex flex-col items-center bg-[url('./assets/home/background-home-mobile.jpg')]
+ bg-no-repeat bg-cover bg-center
         bg-fixed  h-full w-full text-white pt-32">
 
         <h5 className=' text-2xl text-lightBlueGray font-thin font-barlowCondensed'>SO, YOU WANT TO TRAVEL TO</h5>
@@ -14,8 +15,11 @@ const Landing = () => {
             not hover kind of on the edge of it. Well sit back, and relax because we'll give you a 
             truly out of this world experience!
         </p>
-        <button className='bg-white text-black font-bellefair text-2xl rounded-full w-[170px] h-[170px]
-           cursor-pointer mt-52 mb-16'>EXPLORE</button> 
+        <Link to="/destination">
+          <button className='bg-white text-black font-bellefair text-2xl rounded-full w-[170px] h-[170px]
+            cursor-pointer mt-52 mb-16'>EXPLORE</button> 
+        
+        </Link>
       
       </div>
     </div>

@@ -15,7 +15,9 @@ module.exports = {
       content: {
         destinationMobile: "url('./assets/destination/background-destination-mobile.jpg')",
       }
+       
     },
+  
     screens: {
       xs: "480px",
       sm: "768px",
