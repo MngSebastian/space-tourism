@@ -18,7 +18,7 @@ const Crew = () => {
 
 
   return (
-    <div className=' w-full h-full'>
+    <div className=' w-6/6 h-6/6'>
       <div className="flex bg-[url('./assets/crew/background-crew-mobile.jpg')] bg-no-repeat bg-cover bg-center
         bg-fixed  h-full w-full text-white pt-20">
         <div className='flex flex-col items-center w-full'>

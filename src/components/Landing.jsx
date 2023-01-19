@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 const Landing = () => {
   return (
-    <div className='h-full w-full '>
+    <div className='h-6/6 w-6/6 '>
       <div className="flex flex-col items-center bg-[url('./assets/home/background-home-mobile.jpg')]
  bg-no-repeat bg-cover bg-center
         bg-fixed  h-full w-full text-white pt-32">
