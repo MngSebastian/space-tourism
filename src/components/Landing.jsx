@@ -36,16 +36,16 @@ const Landing = () => {
           </div>
         ) : (
           <div className='flex flex-col items-center w-full h-full md:px-[20%] '>
-          <h5 className=' text-2xl text-lightBlueGray font-thin font-barlowCondensed'>SO, YOU WANT TO TRAVEL TO</h5>
-          <p className='font-bellefair text-[90px] md:pl-7'>SPACE</p>
-          <p className='text-lightBlueGray leading-7  text-left px-7 '>Let's face it, if you want to go to space, you might as well genuinely go to outer space and
+          <h5 className=' text-xl text-lightBlueGray font-thin font-barlowCondensed'>SO, YOU WANT TO TRAVEL TO</h5>
+          <p className='font-bellefair text-[70px] md:pl-7'>SPACE</p>
+          <p className='text-lightBlueGray leading-7 text-[15px] text-left px-7 '>Let's face it, if you want to go to space, you might as well genuinely go to outer space and
               not hover kind of on the edge of it. Well sit back, and relax because we'll give you a 
               truly out of this world experience!
           </p>
 
         <Link to="/destination">
-          <button className='bg-white text-black font-bellefair text-2xl rounded-full w-[170px] h-[170px]
-            cursor-pointer mt-52 '>EXPLORE</button> 
+          <button className='bg-white text-black font-bellefair text-2xl rounded-full w-[150px] h-[150px]
+            cursor-pointer mt-36 '>EXPLORE</button> 
         
         </Link>
 
