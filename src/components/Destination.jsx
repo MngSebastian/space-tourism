@@ -16,7 +16,7 @@ const Destination = () => {
   }, [selectedDestination])
   
   return (
-    <div className='w-6/6 h-6/6'>
+    <div className='w-full h-full'>
       <div className="flex bg-[url('./assets/destination/background-destination-mobile.jpg')] bg-no-repeat bg-cover bg-center
         bg-fixed  h-full w-full text-white pt-20">
         {/* TITLE DESTINATION WITH PICTURE PLANET INFO PARAGRAPH AND TRAVEL DATA */}
