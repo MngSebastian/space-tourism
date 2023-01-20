@@ -18,7 +18,7 @@ const Navbar = () => {
       
       {/* DESKTOP NAV */}
       {isDesktopOrTablet ? (
-          <div className='flex md:justify-around text-white sm:text-[16px] md:text-[18px]  
+          <div className='flex sm:justify-around md:justify-around text-white sm:text-[16px] md:text-[18px]  
               font-barlowCondensed  items-center backdrop-blur-lg 
             bg-gray-500/[.10] h-full  w-4/6 md:w-3/6 mt-8 px-4'>
             <Link to="/">
