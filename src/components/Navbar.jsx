@@ -11,7 +11,7 @@ const Navbar = () => {
     setIsMenuToggled(!isMenuToggled)
   }
   return (
-    <div className='flex absolute justify-between items-center h-20 w-full  px-8 pt-4  sm:pt-0 z-40'>
+    <div className='flex absolute justify-between items-center h-20 w-full px-8 sm:px-0   pt-4  sm:pt-0 z-40'>
       {/* if is not desktop  keep data */}
       <img className='sm:pl-4' src="../assets/shared/logo.svg" alt="logo"/>
       
@@ -20,7 +20,7 @@ const Navbar = () => {
       {isDesktopOrTablet ? (
           <div className='flex sm:justify-around md:justify-around text-white sm:text-[16px] md:text-[18px]  
               font-barlowCondensed  items-center backdrop-blur-lg 
-            bg-gray-500/[.10] h-full  w-4/6 md:w-3/6 mt-8 px-4'>
+            bg-gray-500/[.10] h-full  w-4/6 md:w-3/6 sm:mt-0  md:mt-8 px-4'>
             <Link to="/">
                 <button 
                 onClick={() => handleClick(setIsMenuToggled(!isMenuToggled))}
