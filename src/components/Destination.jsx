@@ -30,23 +30,23 @@ const Destination = () => {
         bg-fixed  h-full w-full text-white pt-20">
         {/* TITLE DESTINATION WITH PICTURE PLANET INFO PARAGRAPH AND TRAVEL DATA */}
         <div className='flex flex-col  md:w-full items-center'>
-          <h1 className='font-barlowCondensed tracking-wider md:text-[30px] sm:tracking-widest text-lg sm:pr-[60%] md:pr-[75%] sm:pl-6 sm:mt-12'>
+          <h1 className='font-barlowCondensed tracking-wider md:text-[25px] sm:tracking-widest text-lg sm:pr-[60%] md:pr-[75%] sm:pl-6 sm:mt-12'>
             <span className='text-blue-200'>01</span> PICK YOUR DESTINATION</h1>
             {/* row div that splits screen into image and rest of data */}
 
 
 
 
-            <div className='flex flex-col md:flex-row  items-center justify-center w-full h-full'>
-              <div className='flex  justify-center  items-center md:h-5/6 md:w-2/6 md:ml-20'>
+            <div className='flex flex-col md:flex-row gap-12 items-center justify-center w-full h-full'>
+              <div className='flex  justify-center  items-center md:h-5/6 md:w-2/6 '>
                 <img 
                   className='xs:w-[180px] xs:h-[180px]
                   sm:w-[280px] sm:h-[280px]
-                  md:w-[550px] md:h-[550px]
+                  md:w-[500px] md:h-[500px]
                   mt-4'
                   src={planetData.images.png} alt="destination"/>
               </div>
-              <div className='flex  flex-col items-center  justify-center md:w-2/6 md:h-5/6 md:mr-20'>
+              <div className='flex  flex-col items-center  justify-center md:w-2/6 md:h-5/6 '>
               <div className='flex font-barlowCondensed  justify-start  m: gap-8 mt-4'>
             {/* map over destinations and display each as button */}
             {data.destinations.map( (destination, index) =>{
@@ -62,8 +62,8 @@ const Destination = () => {
               )
             })}
           </div>
-          <h1 className='font-bellefair text-[52px] sm:text-[62px] md:text-[120px] sm:mt-6'>{planetData.name}</h1>
-          <p className='text-center md:text-left  border-b-[1px] border-gray-600 px-6  w-4/6 text-[16px] md:h-[180px] md:text-[20px] text-lightBlueGray mb-6 pb-4'>
+          <h1 className='font-bellefair text-[52px] sm:text-[62px] md:text-[120px] sm:mt-6 md:mt-0'>{planetData.name}</h1>
+          <p className='text-center md:text-left  border-b-[1px] border-gray-600 px-6  w-6/6 text-[16px] md:h-[40%] md:text-[20px] text-lightBlueGray mb-6 pb-4'>
             {planetData.description}
           </p>
           {isDesktopAndTablet ? (
