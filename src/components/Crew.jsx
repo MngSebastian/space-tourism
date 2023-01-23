@@ -43,7 +43,7 @@ const Crew = () => {
                 return <button
                 key={crew.name}
                 onClick={() => handleClick(crew.name)}  
-                className='bg-gray-600 focus:bg-white w-[15px] h-[15px] 
+                className='bg-gray-600 focus:bg-white hover:bg-gray-400 w-[15px] h-[15px] 
                   rounded-full mt-6 mb-6'></button>
               })}
 
