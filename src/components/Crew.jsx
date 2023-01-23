@@ -18,20 +18,20 @@ const Crew = () => {
 
 
   return (
-    <div className=' w-full h-full'>
+    <div className=' w-full  h-full'>
       <div className="flex 
         bg-[url('./assets/crew/background-crew-mobile.jpg')]
-        sm:bg-[url('./assets/crew/background-crew-tablet.jpg')]
+        sm:bg-[url('./assets/crew/background-crew-tablet.jpg')] 
         md:bg-[url('./assets/crew/background-crew-desktop.jpg')] bg-no-repeat bg-cover bg-center
         bg-fixed  h-full w-full text-white pt-20">
-        <div className='flex flex-col  items-center w-full'>
-          <h1 className='font-barlowCondensed tracking-widest text-lg sm:pr-[60%] sm:mt-8 md:text-[25px]'><span className='text-blue-200'>02</span> MEET YOUR CREW</h1>
+        <div className='flex flex-col  items-center  h-full w-full'>
+          <h1 className='font-barlowCondensed tracking-widest text-lg sm:pr-[60%] sm:mt-8 md:mt-0 md:text-[25px]'><span className='text-blue-200'>02</span> MEET YOUR CREW</h1>
           <div className='flex flex-col md:flex-row-reverse  w-full items-center md:justify-center md:items-end md:px-12 md:h-full sm:flex-col-reverse'>
-          <img 
+           <img 
             className='w-[200px] h-[250px] 
             sm:w-[350px] sm:h-[430px]
-            md:w-[30%] md:h-[100%]
-            xs:border-b-[1px] xs:border-gray-600 sm:border-none mt-2'
+            md:w-[30%] md:h-[90%]
+            xs:border-b-[1px] xs:border-gray-600 sm:border-none mt-2 md:mt-0'
             src={crewData.images.png} alt="destination"/>
             <div className='flex flex-col justify-center  md:h-3/6 md:w-3/6 items-center md:items-start md:mb-[200px] '>
               <h3 className=' font-bellefair text-[20px] md:text-[35px] tracking-wide text-lightBlueGray'>{crewData.role}</h3>
