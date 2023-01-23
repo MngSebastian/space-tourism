@@ -25,19 +25,20 @@ const Crew = () => {
         md:bg-[url('./assets/crew/background-crew-desktop.jpg')] bg-no-repeat bg-cover bg-center
         bg-fixed  h-full w-full text-white pt-20">
         <div className='flex flex-col  items-center  h-full w-full'>
-          <h1 className='font-barlowCondensed tracking-widest text-lg sm:pr-[60%] xs:mt-8  md:mt-0 md:text-[25px]'><span className='text-blue-200'>02</span> MEET YOUR CREW</h1>
+          <h1 className='font-barlowCondensed tracking-widest text-lg sm:pr-[60%] xs:mt-8   md:text-[25px]'>
+            <span className='text-blue-200'>02</span> MEET YOUR CREW</h1>
           <div className='flex flex-col md:flex-row-reverse  w-full items-center md:justify-center  md:items-end md:px-12 h-full sm:flex-col-reverse'>
            <img 
             className='w-[200px] h-[250px] 
             sm:w-[350px] sm:h-[430px]
             md:w-[30%] md:h-[90%]
             xs:border-b-[1px] xs:border-gray-600 sm:border-none mt-2 md:mt-0'
-            src={crewData.images.png} alt="destination"/>
+            src={crewData.images.png} alt="crew member"/>
             <div className='flex flex-col justify-center  md:h-3/6 md:w-3/6 items-center md:items-start md:mb-[200px] '>
               <h3 className=' font-bellefair text-[20px] md:text-[35px] tracking-wide text-lightBlueGray'>{crewData.role}</h3>
               <h1 className=' text-[30px] md:text-[45px] tracking-wide font-bellefair'>{crewData.name}</h1>
               <p className='px-6 text-center  leading-8 mt-4 text-lightBlueGray  tracking-wide md:px-0 md:w-[480px] md:text-start'>{crewData.bio}</p>
-            <div className='flex w-full gap-6 justify-center md:justify-start md:mt-16'>
+            <div className='flex w-full gap-6  justify-center md:justify-start md:mt-16'>
               {/* if mobile */}
               {data.crew.map( (crew, index) => {
                 return <button

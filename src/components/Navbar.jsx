@@ -13,7 +13,9 @@ const Navbar = () => {
   return (
     <div className='flex absolute justify-between items-center h-20 w-full px-8 sm:px-0   pt-4  sm:pt-0 z-40'>
       {/* if is not desktop  keep data */}
-      <img className='sm:pl-4' src="../assets/shared/logo.svg" alt="logo"/>
+      <Link to="/">
+        <img className='sm:pl-4' src="../assets/shared/logo.svg" alt="logo"/>
+      </Link>
       
       
       {/* DESKTOP NAV */}
