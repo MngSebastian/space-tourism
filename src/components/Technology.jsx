@@ -34,7 +34,7 @@ const Technology = () => {
           <div className='flex flex-col justify-between  w-[100%] md:flex-row-reverse items-center '>
             <img className='w-full h-[210px]
              sm:h-[300px] 
-             md:w-[700px] md:h-[650px] mt-4 sm:mb-4' 
+             md:w-[600px] md:h-[600px] mt-4 sm:mb-4' 
              src={isDesktop ? technologyData.images.portrait : technologyData.images.landscape} 
             alt="Technology"/>
           <div className='flex flex-col  md:flex-row  items-center'>
