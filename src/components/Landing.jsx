@@ -35,7 +35,7 @@ const Landing = () => {
 
           </div>
         ) : (
-          <div className='w-full h-6/6 flex flex-col items-center bg-red-500  md:px-[20%] '>
+          <div className='w-full h-6/6 flex flex-col items-center md:px-[20%] '>
           <h5 className=' text-xl text-lightBlueGray font-thin font-barlowCondensed pt-20'>SO, YOU WANT TO TRAVEL TO</h5>
           <p className='font-bellefair text-[70px] md:pl-7'>SPACE</p>
           <p className='text-lightBlueGray leading-7 text-[15px] text-center px-7 '>Let's face it, if you want to go to space, you might as well genuinely go to outer space and

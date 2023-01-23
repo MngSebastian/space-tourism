@@ -26,25 +26,25 @@ const Navbar = () => {
             <Link to="/">
                 <button 
                 onClick={() => handleClick(setIsMenuToggled(!isMenuToggled))}
-                className='w-full h-[78px]text-start focus:border-b-[3px] tracking-widest font-light'>
+                className='w-full h-[78px] text-start focus:border-b-[3px] hover:border-b-[3px] hover:border-gray-400 tracking-widest font-light'>
                   <span className='font-barlowCondensed invisible md:visible font-bold tracking-widest pr-2'>00</span> HOME</button>
               </Link>
               <Link to="/destination">
                 <button 
                 onClick={() => handleClick(setIsMenuToggled(!isMenuToggled))}
-                className='w-full h-[78px] text-start focus:border-b-[3px] tracking-widest font-light'>
+                className='w-full h-[78px] text-start focus:border-b-[3px] hover:border-b-[3px] hover:border-gray-400 tracking-widest font-light'>
                   <span className='font-barlowCondensed invisible md:visible font-bold pr-2'>01</span> DESTINATION</button>
               </Link>
               <Link to="/crew">
                 <button 
                 onClick={() => handleClick(setIsMenuToggled(!isMenuToggled))}
-                className='w-full h-[78px] text-start focus:border-b-[3px] tracking-widest font-light'>
+                className='w-full h-[78px] text-start focus:border-b-[3px] hover:border-b-[3px] hover:border-gray-400 tracking-widest font-light'>
                   <span className='font-barlowCondensed invisible md:visible font-bold  pr-2'>02</span> CREW</button>
               </Link>
               <Link to="/technology">
                 <button 
                 onClick={() => handleClick(setIsMenuToggled(!isMenuToggled))}
-                className='w-full h-[78px] text-start focus:border-b-[3px] tracking-widest font-light'>
+                className='w-full h-[78px] text-start focus:border-b-[3px] hover:border-b-[3px] hover:border-gray-400 tracking-widest font-light'>
                   <span className='font-barlowCondensed invisible md:visible font-bold  pr-2'>03</span> TECHNOLOGY</button>
               </Link>
           </div>
