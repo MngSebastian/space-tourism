@@ -24,9 +24,9 @@ const Crew = () => {
         sm:bg-[url('./assets/crew/background-crew-tablet.jpg')] 
         md:bg-[url('./assets/crew/background-crew-desktop.jpg')] bg-no-repeat bg-cover bg-center
         bg-fixed  h-full w-full text-white pt-20">
-        <div className='flex flex-col  items-center  h-full w-full'>
-          <h1 className='font-barlowCondensed tracking-widest text-lg sm:pr-[60%] sm:mt-8 md:mt-0 md:text-[25px]'><span className='text-blue-200'>02</span> MEET YOUR CREW</h1>
-          <div className='flex flex-col md:flex-row-reverse  w-full items-center md:justify-center md:items-end md:px-12 md:h-full sm:flex-col-reverse'>
+        <div className='flex flex-col  items-center bg-yellow-500 h-full w-full'>
+          <h1 className='font-barlowCondensed tracking-widest text-lg sm:pr-[60%] xs:mt-8  md:mt-0 md:text-[25px]'><span className='text-blue-200'>02</span> MEET YOUR CREW</h1>
+          <div className='flex flex-col md:flex-row-reverse  w-full items-center md:justify-center bg-red-500 md:items-end md:px-12 h-full sm:flex-col-reverse'>
            <img 
             className='w-[200px] h-[250px] 
             sm:w-[350px] sm:h-[430px]
