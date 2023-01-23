@@ -28,7 +28,7 @@ const Landing = () => {
             </div>
 
           <Link to="/destination">
-            <button className='bg-white text-black font-bellefair text-2xl rounded-full w-[170px] h-[170px]
+            <button className='bg-white text-black hover:shadow-[0px_0px_40px_20px_rgba(255,255,255,.70)] font-bellefair text-2xl rounded-full w-[170px] h-[170px]
               sm:w-[200px] sm:h-[200px] cursor-pointer mt-32'>EXPLORE</button> 
           
           </Link>
