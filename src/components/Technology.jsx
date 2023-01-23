@@ -28,7 +28,7 @@ const Technology = () => {
         md:bg-[url('./assets/technology/background-technology-desktop.jpg')] bg-no-repeat
         bg-cover bg-center bg-fixed  h-full w-full text-white pt-20">
         <div className='flex flex-col  items-center w-full'>
-          <h1 className='font-barlowCondensed tracking-wider text-lg sm:text-[25px] mt-6 sm:mt-12 sm:mb-12 sm:pr-[60%]'>
+          <h1 className='font-barlowCondensed tracking-wider text-lg sm:text-[25px] mt-6 sm:mt-12 sm:mb-12 sm:pr-[70%]'>
             <span className='text-blue-200'>03</span> SPACE LAUNCH 101
           </h1>
           <div className='flex flex-col justify-between  w-[100%] md:flex-row-reverse items-center '>
@@ -39,7 +39,7 @@ const Technology = () => {
             alt="Technology"/>
           <div className='flex flex-col  md:flex-row  items-center'>
 
-          <div className='flex md:flex-col gap-4 mt-6 sm:mb-4 md:pl-12'>
+          <div className='flex md:flex-col gap-4 mt-6 sm:mb-4 md:pl-44'>
             {data.technology.map( (item, index ) => {
               return <button
                 onClick={() => handleClick(item.name)} 
