@@ -6,7 +6,6 @@ const Navbar = () => {
   const [isMenuToggled, setIsMenuToggled] = useState(false)
   const isDesktopOrTablet = useMediaQuery("(min-width: 600px)");
 
-
   function handleClick() {
     setIsMenuToggled(!isMenuToggled)
   }
@@ -16,7 +15,7 @@ const Navbar = () => {
       <Link to="/">
         <img className='sm:pl-4' src="../assets/shared/logo.svg" alt="logo"/>
       </Link>
-      
+      {/* 'w-full h-[78px] text-start focus:border-b-[3px] hover:border-b-[3px] hover:border-gray-400 tracking-widest font-light' */}
       
       {/* DESKTOP NAV */}
       {isDesktopOrTablet ? (
@@ -24,13 +23,14 @@ const Navbar = () => {
               font-barlowCondensed  items-center backdrop-blur-lg 
             bg-gray-500/[.10] h-full  w-4/6 md:w-3/6 sm:mt-0  md:mt-8 px-4'>
             <Link to="/">
-                <button 
+                <button id="home"
                 onClick={() => handleClick(setIsMenuToggled(!isMenuToggled))}
-                className='w-full h-[78px] text-start focus:border-b-[3px] hover:border-b-[3px] hover:border-gray-400 tracking-widest font-light'>
+                className='w-full h-[78px] text-start  hover:border-b-[3px] hover:border-gray-400 tracking-widest font-light'>
                   <span className='font-barlowCondensed invisible md:visible font-bold tracking-widest pr-2'>00</span> HOME</button>
               </Link>
+              
               <Link to="/destination">
-                <button 
+                <button id="destination"
                 onClick={() => handleClick(setIsMenuToggled(!isMenuToggled))}
                 className='w-full h-[78px] text-start focus:border-b-[3px] hover:border-b-[3px] hover:border-gray-400 tracking-widest font-light'>
                   <span className='font-barlowCondensed invisible md:visible font-bold pr-2'>01</span> DESTINATION</button>

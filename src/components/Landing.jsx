@@ -28,8 +28,10 @@ const Landing = () => {
             </div>
 
           <Link to="/destination">
-            <button className='bg-white text-black hover:shadow-[0px_0px_40px_20px_rgba(255,255,255,.70)] font-bellefair text-2xl rounded-full w-[170px] h-[170px]
-              sm:w-[200px] sm:h-[200px] cursor-pointer mt-32'>EXPLORE</button> 
+            <button className='bg-white text-black font-bellefair
+              text-2xl rounded-full w-[170px] h-[170px]
+              sm:w-[200px] sm:h-[200px] cursor-pointer mt-32   hover:shadow-[0_0_0_70px_rgba(255,255,255,0.1)] duration-500'>EXPLORE</button>
+               
           
           </Link>
 
@@ -45,7 +47,7 @@ const Landing = () => {
 
         <Link to="/destination">
           <button className='bg-white text-black font-bellefair text-2xl rounded-full w-[150px] h-[150px]
-            cursor-pointer mt-36 '>EXPLORE</button> 
+            cursor-pointer mt-36'>EXPLORE</button> 
         
         </Link>
 
