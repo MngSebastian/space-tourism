@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Bellefair&display=swap');
 
+/* Style for the Planet buttons in "Destination" */
 .borderHover:hover {
     border-bottom: 3px solid rgb(108, 108, 108);
 }
@@ -18,3 +19,21 @@
 .borderHover.active:hover {
     border-bottom: 3px solid rgb(251, 251, 251);
 }
+
+
+/* Style for the dot buttons that represent the crew members */
+ .dotHover:hover {
+    background-color:rgb(108, 108, 108);
+}
+
+/* .dotHover:active { 
+    background-color: rgb(251, 251, 251);
+} */
+
+.activeDot{
+    background-color: white;
+}
+
+/* .dotHover.active:hover {
+    background-color:rgb(251, 251, 251);
+} */

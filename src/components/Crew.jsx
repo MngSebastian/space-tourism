@@ -4,10 +4,12 @@ import { useState, useEffect } from 'react';
 const Crew = () => {
   const [selectedCrew, setSelectedCrew] = useState("DOUGLAS HURLEY");
   const [crewData, setCrewData] = useState(data.crew.find( crew => crew.name === selectedCrew))
-  
+  const [selectedIndex, setSelectedIndex] = useState(data.crew.findIndex(crew => crew.name === "DOUGLAS HURLEY"))
+
 
   function handleClick(crew) {
     setSelectedCrew(crew)
+    setSelectedIndex(data.crew.findIndex(c => c.name === crew))
   }
   
   useEffect(() => {
@@ -41,11 +43,13 @@ const Crew = () => {
             <div className='flex w-full gap-6  justify-center md:justify-start md:mt-16'>
               {/* if mobile */}
               {data.crew.map( (crew, index) => {
+                const isActive = selectedIndex === index
+
                 return <button
                 key={crew.name}
                 onClick={() => handleClick(crew.name)}  
-                className='bg-gray-600 focus:bg-white hover:bg-gray-400 w-[15px] h-[15px] 
-                  rounded-full mt-6 mb-6'></button>
+                className={` bg-gray-600  w-[15px] h-[15px] 
+                  rounded-full mt-6 mb-6 ${selectedIndex === index ? "activeDot" : "dotHover"}`}></button>
               })}
 
             </div>
