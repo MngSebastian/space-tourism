@@ -3,3 +3,18 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Bellefair&display=swap');
 
+.borderHover:hover {
+    border-bottom: 3px solid rgb(108, 108, 108);
+}
+
+.borderHover:active {
+    border-bottom: 3px solid rgb(251, 251, 251);
+}
+
+.active {
+    border-bottom: 3px solid rgb(251, 251, 251);
+}
+
+.borderHover.active:hover {
+    border-bottom: 3px solid rgb(251, 251, 251);
+}

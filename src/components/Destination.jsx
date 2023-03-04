@@ -50,6 +50,7 @@ const Destination = () => {
               <div className='flex font-barlowCondensed  justify-start  m: gap-8 mt-4'>
             {/* map over destinations and display each as button */}
             {data.destinations.map( (destination, index) =>{
+              const isActive = selectedIndex === index
               return (
                 <button
                   key={destination.name}
@@ -57,7 +58,8 @@ const Destination = () => {
                     handleClick(destination.name)
                     setSelectedIndex(index)
                   }}
-                  className='tracking-widest h-[35px] focus:border-b-[3px] text-[16px] md:text-[22px] focus:text-white text-lightBlueGray'>{destination.name}</button>
+                  className={` borderHover tracking-widest h-[35px] focus:border-b-[3px] text-[16px] 
+                  md:text-[22px] focus:text-white text-lightBlueGray ${isActive ? "active" : ""}`}>{destination.name}</button>
 
               )
             })}
