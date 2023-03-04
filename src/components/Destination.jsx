@@ -58,7 +58,7 @@ const Destination = () => {
                     handleClick(destination.name)
                     setSelectedIndex(index)
                   }}
-                  className={` borderHover tracking-widest h-[35px] focus:border-b-[3px] text-[16px] 
+                  className={` borderHover tracking-widest h-[35px] text-[16px] 
                   md:text-[22px] focus:text-white text-lightBlueGray ${isActive ? "active" : ""}`}>{destination.name}</button>
 
               )

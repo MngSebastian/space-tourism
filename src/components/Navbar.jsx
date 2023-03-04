@@ -27,30 +27,30 @@ const Navbar = () => {
             <Link to="/">
                 <button id="home"
                 onClick={() => handleClick(setIsMenuToggled(!isMenuToggled))}
-                className={`w-full h-[78px] text-start  hover:border-b-[3px] hover:border-gray-400 
-                    tracking-widest font-light ${location.pathname === '/' ? 'border-b-2 border-white' : ''}`}>
+                className={`w-full h-[78px] text-start tracking-widest font-light 
+                  ${location.pathname === '/' ? 'border-b-2 border-white' : 'borderHover'}`}>
                   <span className='font-barlowCondensed invisible md:visible font-bold tracking-widest pr-2'>00</span> HOME</button>
               </Link>
               
               <Link to="/destination">
                 <button id="destination"
                 onClick={() => handleClick(setIsMenuToggled(!isMenuToggled))}
-                className={`w-full h-[78px] text-start focus:border-b-[3px] hover:border-b-[3px] hover:border-gray-400
-                     tracking-widest font-light ${location.pathname === '/destination' ? 'border-b-2 border-white' : ''}`}>
+                className={`w-full h-[78px] text-start tracking-widest font-light 
+                  ${location.pathname === '/destination' ? 'border-b-2 border-white' : 'borderHover'}`}>
                   <span className='font-barlowCondensed invisible md:visible font-bold pr-2'>01</span> DESTINATION</button>
               </Link>
               <Link to="/crew">
                 <button 
                 onClick={() => handleClick(setIsMenuToggled(!isMenuToggled))}
-                className={`w-full h-[78px] text-start focus:border-b-[3px] hover:border-b-[3px] hover:border-gray-400
-                     tracking-widest font-light ${location.pathname === '/crew' ? 'border-b-2 border-white' : ''}`}>
+                className={`w-full h-[78px] text-start tracking-widest font-light 
+                  ${location.pathname === '/crew' ? 'border-b-2 border-white' : 'borderHover'}`}>
                   <span className='font-barlowCondensed invisible md:visible font-bold  pr-2'>02</span> CREW</button>
               </Link>
               <Link to="/technology">
                 <button 
                 onClick={() => handleClick(setIsMenuToggled(!isMenuToggled))}
-                className={`w-full h-[78px] text-start focus:border-b-[3px] hover:border-b-[3px] hover:border-gray-400
-                 tracking-widest font-light ${location.pathname === '/technology' ? 'border-b-2 border-white' : ''}`}>
+                className={`w-full h-[78px] text-start tracking-widest font-light 
+                  ${location.pathname === '/technology' ? 'border-b-2 border-white' : 'borderHover'}`}>
                   <span className='font-barlowCondensed invisible md:visible font-bold  pr-2'>03</span> TECHNOLOGY</button>
               </Link>
           </div>
