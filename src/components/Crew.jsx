@@ -31,7 +31,7 @@ const Crew = () => {
            <img 
             className='w-[200px] h-[250px] 
             sm:w-[350px] sm:h-[430px]
-            md:w-[30%] md:h-[90%]
+            md:w-[490px] md:h-[700px]
             xs:border-b-[1px] xs:border-gray-600 sm:border-none mt-2 md:mt-0'
             src={crewData.images.png} alt="crew member"/>
             <div className='flex flex-col justify-center  md:h-3/6 md:w-3/6 items-center md:items-start md:mb-[200px] '>
