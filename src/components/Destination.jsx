@@ -46,7 +46,7 @@ const Destination = () => {
                   mt-4'
                   src={planetData.images.png} alt="destination"/>
               </div>
-              <div className='flex  flex-col items-center  justify-center md:w-2/6 md:h-5/6 '>
+              <div className='flex flex-col items-center  justify-center md:items-start md:w-2/6 md:h-5/6 '>
               <div className='flex font-barlowCondensed  justify-start  m: gap-8 mt-4'>
             {/* map over destinations and display each as button */}
             {data.destinations.map( (destination, index) =>{
@@ -65,7 +65,7 @@ const Destination = () => {
             })}
           </div>
           <h1 className='font-bellefair text-[52px] sm:text-[62px] md:text-[120px] sm:mt-6 md:mt-0'>{planetData.name}</h1>
-          <p className='text-center md:text-left  border-b-[1px] border-gray-600 px-6  w-6/6 text-[16px] md:h-[40%] md:text-[20px] text-lightBlueGray mb-6 pb-4'>
+          <p className='text-center  border-b-[1px] border-gray-600 px-8  w-6/6 text-[16px] md:pl-0 md:pr-16 md:h-[40%] md:text-left  md:text-[20px] text-lightBlueGray mb-6 pb-4'>
             {planetData.description}
           </p>
           {isDesktopAndTablet ? (
