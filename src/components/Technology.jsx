@@ -4,13 +4,17 @@ import { useState, useEffect } from 'react';
 import useMediaQuery from "../hooks/useMediaQuery"
 const Technology = () => {
   const [selectedTechnology, setSelectedTechnology] = useState("LAUNCH VEHICLE");
-  const [technologyData, setTechnologyData] = useState(data.technology.find( technology => technology.name === selectedTechnology))
+  const [technologyData, setTechnologyData] = useState(data.technology.find( technology => technology.name === selectedTechnology));
+  const [selectedIndex, setSelectedIndex] = useState(data.technology.findIndex(tech => tech.name === "LAUNCH VEHICLE"))
+
   const isDesktop = useMediaQuery("(min-width: 1060px)");
 
 
 
   function handleClick(technology) {
     setSelectedTechnology(technology)
+    setSelectedIndex(data.technology.findIndex(tech => tech.name === technology))
+
   }
   
   useEffect(() => {
@@ -41,9 +45,11 @@ const Technology = () => {
 
           <div className='flex md:flex-col gap-4 mt-6 sm:mb-4 md:pl-44'>
             {data.technology.map( (item, index ) => {
+              const isActive = selectedIndex === index
               return <button
                 onClick={() => handleClick(item.name)} 
-                className='rounded-full border-[.5px] font-bellefair focus:bg-white text-lg focus:text-black border-white h-[55px] w-[55px] md:text-[22px] md:h-[80px] md:w-[80px]'>
+                className={`rounded-full border-[.5px] font-bellefair text-lg border-white
+                 h-[55px] w-[55px] md:text-[22px] md:h-[80px] md:w-[80px] ${selectedIndex === index ? "activeDot" : "dotHover"}`}>
                   {index + 1}
                 </button>
             })}

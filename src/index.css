@@ -26,14 +26,7 @@
     background-color:rgb(108, 108, 108);
 }
 
-/* .dotHover:active { 
-    background-color: rgb(251, 251, 251);
-} */
-
 .activeDot{
     background-color: white;
+    color: black;
 }
-
-/* .dotHover.active:hover {
-    background-color:rgb(251, 251, 251);
-} */
